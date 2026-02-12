@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import myImage from "../assets/flask-x-clone-2.onrender.com_.png";
+import mySecondImage from "../assets/todoapp-ateg.onrender.com_account.png";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -48,7 +50,7 @@ const Home = () => {
 
                     <div>
                         <div className='my-10'>
-                            <img className='w-full h-[350px] rounded-xl' src="portfolio-project/src/assets/todoapp-ateg.onrender.com_account.png" />
+                            <img className='w-full h-[350px] rounded-xl' src={myImage} />
                         </div>
                         <h2 className='text-2xl font-bold'>Todo List App - A full-stack web application for managing tasks with secure user authentication.</h2>
                         
@@ -78,13 +80,13 @@ const Home = () => {
                             <p className='font-bold'>Live Demo: <a className='hover:underline' href="https://todoapp-ateg.onrender.com/">https://todoapp-ateg.onrender.com/</a></p>
                         </div>
                         <div>
-                            <p className='font-bold'>GitHub Repo: </p>
+                            <p className='font-bold'>GitHub Repo: <a href="https://github.com/obedobodoruku/flask-todo-app">https://github.com/obedobodoruku/flask-todo-app</a></p>
                         </div>
                     </div>
 
                     <div className="mt-[100px]">
                         <div className='my-10'>
-                            <img className='w-full h-[350px] rounded-xl' src="portfolio-project/src/assets/flask-x-clone-2.onrender.com_.png" />
+                            <img className='w-full h-[350px] rounded-xl' src={mySecondImage} />
                         </div>
                         <h1 className="text-3xl font-bold">Social Platform Website</h1>
                         <div>
@@ -110,8 +112,12 @@ const Home = () => {
                             <p><span className='font-bold'>Live Demo: </span><a href="https://flask-x-clone-2.onrender.com/">https://flask-x-clone-2.onrender.com/</a></p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-
+            <section id="footer">
+                <div className="p-3 flex items-center justify-center mt-[150px]">
+                    <footer><span className="text-center text-[0.7rem] text-white font-bold">By Obed Obodoruku 2026</span></footer>
                 </div>
             </section>
         </div>
